@@ -86,3 +86,13 @@ const ingredientsThree = [
     "Cerberus Slobber",
     "Harpy Hair"
 ];
+
+function recipeBook() {
+    const randomName = potionNames[Math.floor(Math.random() * 20)];
+    const randIngOne = ingredientsOne[Math.floor(Math.random() * 20)];
+    const randIngTwo = ingredientsTwo[Math.floor(Math.random() * 20)];
+    const randIngThree = ingredientsThree[Math.floor(Math.random() * 20)];
+    let fullPotion = `With incantations whispered, let the secrets of creation unfold: To concoct the potion of ${randomName}, infuse the brew with a dose of ${randIngOne}, blend with the essence of ${randIngTwo}, and stir gently with a dash of ${randIngThree}.`
+    console.log(fullPotion);
+}
+recipeBook();
